@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		40FFD2121D9F3FC800DF8306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FFD2111D9F3FC800DF8306 /* AppDelegate.swift */; };
-		40FFD2141D9F3FC800DF8306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FFD2131D9F3FC800DF8306 /* ViewController.swift */; };
+		40FFD2141D9F3FC800DF8306 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FFD2131D9F3FC800DF8306 /* MainVC.swift */; };
 		40FFD2171D9F3FC800DF8306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FFD2151D9F3FC800DF8306 /* Main.storyboard */; };
 		40FFD2191D9F3FC800DF8306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40FFD2181D9F3FC800DF8306 /* Assets.xcassets */; };
 		40FFD21C1D9F3FC800DF8306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 40FFD21A1D9F3FC800DF8306 /* LaunchScreen.storyboard */; };
+		40FFD2281D9F48FA00DF8306 /* still time.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 40FFD2271D9F48FA00DF8306 /* still time.ttf */; };
+		40FFD22A1D9F4AA600DF8306 /* VideoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40FFD2291D9F4AA600DF8306 /* VideoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		40FFD20E1D9F3FC800DF8306 /* Party-Rocks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Party-Rocks.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		40FFD2111D9F3FC800DF8306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		40FFD2131D9F3FC800DF8306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		40FFD2131D9F3FC800DF8306 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		40FFD2161D9F3FC800DF8306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		40FFD2181D9F3FC800DF8306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		40FFD21B1D9F3FC800DF8306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		40FFD21D1D9F3FC800DF8306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		40FFD2271D9F48FA00DF8306 /* still time.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "still time.ttf"; sourceTree = "<group>"; };
+		40FFD2291D9F4AA600DF8306 /* VideoVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,48 @@
 		40FFD2101D9F3FC800DF8306 /* Party-Rocks */ = {
 			isa = PBXGroup;
 			children = (
+				40FFD2261D9F48E700DF8306 /* Lib */,
+				40FFD2251D9F404B00DF8306 /* Model */,
+				40FFD2241D9F404100DF8306 /* View */,
+				40FFD2231D9F403600DF8306 /* Controller */,
 				40FFD2111D9F3FC800DF8306 /* AppDelegate.swift */,
-				40FFD2131D9F3FC800DF8306 /* ViewController.swift */,
-				40FFD2151D9F3FC800DF8306 /* Main.storyboard */,
 				40FFD2181D9F3FC800DF8306 /* Assets.xcassets */,
-				40FFD21A1D9F3FC800DF8306 /* LaunchScreen.storyboard */,
 				40FFD21D1D9F3FC800DF8306 /* Info.plist */,
 			);
 			path = "Party-Rocks";
+			sourceTree = "<group>";
+		};
+		40FFD2231D9F403600DF8306 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				40FFD2131D9F3FC800DF8306 /* MainVC.swift */,
+				40FFD2291D9F4AA600DF8306 /* VideoVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		40FFD2241D9F404100DF8306 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				40FFD2151D9F3FC800DF8306 /* Main.storyboard */,
+				40FFD21A1D9F3FC800DF8306 /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		40FFD2251D9F404B00DF8306 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		40FFD2261D9F48E700DF8306 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				40FFD2271D9F48FA00DF8306 /* still time.ttf */,
+			);
+			name = Lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +134,7 @@
 				TargetAttributes = {
 					40FFD20D1D9F3FC700DF8306 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = QMBE7G4PQJ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				40FFD21C1D9F3FC800DF8306 /* LaunchScreen.storyboard in Resources */,
+				40FFD2281D9F48FA00DF8306 /* still time.ttf in Resources */,
 				40FFD2191D9F3FC800DF8306 /* Assets.xcassets in Resources */,
 				40FFD2171D9F3FC800DF8306 /* Main.storyboard in Resources */,
 			);
@@ -136,7 +176,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40FFD2141D9F3FC800DF8306 /* ViewController.swift in Sources */,
+				40FFD22A1D9F4AA600DF8306 /* VideoVC.swift in Sources */,
+				40FFD2141D9F3FC800DF8306 /* MainVC.swift in Sources */,
 				40FFD2121D9F3FC800DF8306 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +301,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QMBE7G4PQJ;
 				INFOPLIST_FILE = "Party-Rocks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.blindcoder.Party-Rocks";
@@ -272,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = QMBE7G4PQJ;
 				INFOPLIST_FILE = "Party-Rocks/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.blindcoder.Party-Rocks";
